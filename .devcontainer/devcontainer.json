@@ -1,0 +1,24 @@
+{
+  "name": "Phoenix LiveView App",
+  "image": "mcr.microsoft.com/devcontainers/elixir:1.15",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    },
+    "ghcr.io/devcontainers/features/erlang:1": {
+      "version": "26"
+    },
+    "ghcr.io/devcontainers/features/postgres:1": {
+      "version": "15"
+    }
+  },
+  "postCreateCommand": "mix setup",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "jakebecker.elixir-ls",
+        "bradlc.vscode-tailwindcss"
+      ]
+    }
+  }
+}
